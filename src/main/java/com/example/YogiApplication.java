@@ -17,8 +17,9 @@ public class YogiApplication {
 	}
 
 	public Docket productApi() {
-		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.example")).build();
-		
+		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.example"))
+				.build();
+
 	}
 
 }
